@@ -9,8 +9,14 @@ body {
   color: #006666;
 }
 
-section {
-  height: 100VH;
+.grey-text {
+  color: #303030;
+  opacity: 0.5;
+}
+
+.heading {
+  font-weight: 900;
+  font-size: 44px;
 }
 
 #header {
@@ -74,11 +80,14 @@ section {
 .main-heading {
   font-weight: 900;
   letter-spacing: 3px;
-  font-size: 54px;
+  font-size: 100px;
+  @media (max-device-width: 1024px) {
+    font-size: 54px;
+  }
 }
 
 .tiny-subheading {
-  opacity: 0.5;
+  opacity: 0.75;
 }
 
 .scroll-div {
@@ -93,24 +102,51 @@ section {
   cursor: pointer;
 }
 
-#scroll-text {
-  margin-bottom: 0px;
-  margin-left: 5px;
+.scroll-text {
+  font-size: 20px;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 .scroll-img {
   filter: invert(100%);
-  height: 50px;
+  height: 75px;
 }
 
+#internet-sec {
+  padding: 2em;
+}
+
+.heading-divider {
+  width: 50%;
+  margin-top: 3.5em;
+  margin-bottom: 3.5em;
+}
 
 .container {
   text-align: center;
 }
-#internet-heading {
-  font-weight: 700;
+
+.col-heading {
+  font-size: 28px;
+  font-weight: bolder;
 }
 
 .internet-icon {
+  margin-top: 10px;
   width: 125px;
+}
+
+.internet-icon.lightning {
+  width: 75px;
+}
+
+.img-divider {
+  width: 50%;
+}
+
+.col-text {
+  font-size: 22px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
