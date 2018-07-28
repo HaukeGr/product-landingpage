@@ -5,14 +5,21 @@ body {
   color: #fafafa;
 }
 
+.green-text {
+  color: #006666;
+}
+
+section {
+  height: 100VH;
+}
+
 #header {
   width: 100%;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0);
   padding: 40px 40px;
   z-index: 1;
-  display: fixed;
-  position: absolute;
+  position: fixed;
 }
 
 #header-img {
@@ -25,16 +32,6 @@ body {
   opacity: 0.6;
 }
 
-#welcome-sec {
-  height: 100vh;
-}
-
-.welcome-bg {
-  width: 100%;
-  z-index: -100;
-  position: absolute;
-}
-
 #nav-bar {
   display: inline-block;
   float: right;
@@ -42,9 +39,11 @@ body {
 
 .nav-link {
   font-weight: 700;
+  font-size: 18px;
   letter-spacing: 1px;
   display: inline-block;
-  transition: all ease-in 200ms
+  margin: 10px 15px;
+  transition: all ease-in 200ms;
 }
 
 .nav-link:hover {
@@ -52,7 +51,19 @@ body {
   cursor: pointer;
 }
 
-.container {
+#bg-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#welcome-sec {
+  height: 100vh;
+}
+
+.landing {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -74,13 +85,32 @@ body {
   position: absolute;
   bottom: 0;
   margin: auto;
+  transition: all ease-in 200ms;
+}
+
+.scroll-div:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }
 
 #scroll-text {
   margin-bottom: 0px;
+  margin-left: 5px;
 }
 
 .scroll-img {
   filter: invert(100%);
   height: 50px;
+}
+
+
+.container {
+  text-align: center;
+}
+#internet-heading {
+  font-weight: 700;
+}
+
+.internet-icon {
+  width: 125px;
 }
