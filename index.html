@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js" type="text/javascript"></script>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
@@ -27,7 +28,7 @@
     <section id="welcome-sec">
       <div class="landing animated fadeInUp">
         <h1 class="main-heading">Welcome To The Future.</h1>
-        <h5 class="tiny-subheading">(Sounds cool, right?)</h5>
+        <h2 class="tiny-subheading">The new internet has arrived.</h2>
         <div class="scroll-div">
           <p class="scroll-text">Learn more</p>
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Arrow-down.svg/1600px-Arrow-down.svg.png" class="scroll-img">
@@ -71,7 +72,7 @@
       <div class="container">
         <h1 class="heading">We have the tools to build the internet of the future</h1>
         <hr class="heading-divider">
-        <div class="row">
+        <div class="row p2p">
           <div class="col-md-3">
             <img class="tech-img" src="images/peer-to-peer.svg">
           </div>
@@ -103,12 +104,32 @@
       </div>
     </section>
     <section id="contact-sec">
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input id="name" name="name" placeholder="Name" pattern="[a-zA-Z]*">
-        <input id="email" name="email" type="email" placeholder="Email">
-        <textarea id="message" name="message" placeholder="Message"></textarea>
-        <input id="submit" type="submit" value="Submit">
-      </form>
+      <div class="container">
+        <h1 class="heading">Questions? Feedback? Feel free to message us!</h1>
+        <hr class="heading-divider">
+
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input class="form-input" id="name" name="name" placeholder="Name" required>
+          <input class="form-input" id="email" name="email" type="email" placeholder="Email" required>
+          <textarea class="form-input" id="message" name="message" placeholder="Message" required></textarea>
+          <input class="form-input" id="submit" type="submit" value="Send Message">
+        </form>
+    </div>
     </section>
+    <footer id="footer">
+      <div class="made">
+        Content from <a class="made-link" href="https://www.piedpiper.com">piedpiper.com</a>.<br>
+Made with
+    <svg class="coffee" style="width:24px;height:24px" viewBox="0 0 24 24">
+      <path fill="#303030" d="M2,21V19H20V21H2M20,8V5H18V8H20M20,3A2,2 0 0,1 22,5V8A2,2 0 0,1 20,10H18V13A4,4 0 0,1 14,17H8A4,4 0 0,1 4,13V3H20M16,5H6V13A2,2 0 0,0 8,15H14A2,2 0 0,0 16,13V5Z" />
+    </svg>
+    and
+    <svg class="heart" style="width:24px;height:24px" viewBox="0 0 24 24">
+      <path fill="#303030" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+    </svg>
+    by
+    <a class="made-link" target="_blank" href="https://www.freecodecamp.org/haukegr">Hauke</a>
+</div>
+    </footer>
   </body>
 </html>
