@@ -11,12 +11,13 @@ body {
 
 .grey-text {
   color: #303030;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .heading {
   font-weight: 900;
   font-size: 44px;
+  text-align: center;
 }
 
 #header {
@@ -156,4 +157,35 @@ body {
 
 .video-div {
   margin-top: 2em;
+}
+
+#video {
+  border: none;
+}
+
+#tech-sec {
+  margin-top: 5em;
+  color: #006666;
+}
+
+.tech-img {
+  height: 125px;
+}
+
+.tech-p {
+  font-size: 22px;
+  text-align: right;
+}
+
+.mid-row {
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+#middle-p {
+  text-align: left;
+}
+
+#data-icon {
+  height: 100px;
 }
