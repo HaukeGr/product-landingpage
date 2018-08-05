@@ -70,20 +70,23 @@ body {
 }
 
 .landing {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .main-heading {
   font-weight: 900;
   letter-spacing: 3px;
   font-size: 100px;
-  @media (max-device-width: 1024px) {
+}
+
+@media (max-device-width: 1024px) {
+  .main-heading {
     font-size: 54px;
-  }
+    }
 }
 
 .tiny-subheading {
@@ -149,4 +152,8 @@ body {
   font-size: 22px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.video-div {
+  margin-top: 2em;
 }
